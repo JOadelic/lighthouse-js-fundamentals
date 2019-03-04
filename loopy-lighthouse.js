@@ -1,10 +1,14 @@
-function loopyLighthouse () {
-
-  // for loop counts 100-200
-  var counter = [];
-  for (var i = 100; i <= 200; i++) {
-    counter.push(i)
-  } return counter;
+for (var i = 100; i <= 200; i++) {
+  if (i % 3 === 0 && i % 4 === 0) {
+    console.log("LoopyLighthouse");
+  }
+  else if (i % 4 === 0 ) {
+    console.log("Lighthouse");
+  }
+  else if (i % 3 === 0) {
+    console.log("Loopy");
+  }
+  else {
+    console.log(i);
+  }
 }
-
-console.log(loopyLighthouse());
